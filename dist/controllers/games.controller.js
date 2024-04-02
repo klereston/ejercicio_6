@@ -150,7 +150,9 @@ exports.getAllRolls = getAllRolls;
 const rollDice = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const prisma = new client_1.PrismaClient();
-        const { rolldice1, rolldice2 } = req.body;
+        //const {rolldice1, rolldice2 } = req.body
+        const rolldice1 = Math.floor(Math.random() * 6) + 1;
+        const rolldice2 = Math.floor(Math.random() * 6) + 1;
         const loggedInUserId = Number(req.body.user_id); //from token user.id
         //Find the user to get winnings games
         const findUserInDb = () => __awaiter(void 0, void 0, void 0, function* () {

@@ -2,6 +2,7 @@ import bcrypt from "bcryptjs"
 import { PrismaClient } from '@prisma/client'
 import { User } from '../models/user.model'
 import jwt from 'jsonwebtoken'
+import { ok } from "assert"
 //import connectToPrismaDB from "../db/connectToPrismaDB"
 
 const JWT_SECRET="ASD123"

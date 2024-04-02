@@ -71,25 +71,5 @@ model Match {
 // GET /ranking/winner: retorna el jugador/a amb millor percentatge d’èxit.
 //---------------------------
 
-// model ReceivedMessageFromUser {
-//   id        Int     @id @default(autoincrement())
-//   receivedMessage   String?
-//   whoSend String
-//   msg Msg[]
-// }
-
-// model Msg {
-//   id        Int     @id @default(autoincrement())
-//   sendMessageToUser    SendMessageToUser    @relation(fields: [sendMessageToUserId], references: [id])
-//   sendMessageToUserId  Int
-//   receivedMessage    ReceivedMessageFromUser    @relation(fields: [receivedMessageId], references: [id])
-//   receivedMessageId  Int
-//   author    User    @relation(fields: [authorId], references: [id])
-//   authorId  Int
-// }
-
-// createdAt        DateTime           @default(now())
-// updatedAt        DateTime           @updatedAt
-
 //npx prisma migrate dev
 

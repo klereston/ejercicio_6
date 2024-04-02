@@ -52,3 +52,5 @@ app.listen(PORT, () => {
 // GET /ranking/loser: retorna el jugador/a amb pitjor percentatge d’èxit.
 // GET /ranking/winner: retorna el jugador/a amb millor percentatge d’èxit.
 //---------------------------
+
+//GIT REPO https://github.com/klereston/ejercicio_6

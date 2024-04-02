@@ -164,7 +164,9 @@ export const getAllRolls:any = async (req: any, res: any) => {
 export const rollDice: any = async (req: any, res: any) => {
     try {
         const prisma = new PrismaClient()
-        const {rolldice1, rolldice2 } = req.body
+        //const {rolldice1, rolldice2 } = req.body
+        const rolldice1 = Math.floor(Math.random() * 6) + 1 
+        const rolldice2 = Math.floor(Math.random() * 6) + 1
         const loggedInUserId = Number(req.body.user_id) //from token user.id
 
         //Find the user to get winnings games
